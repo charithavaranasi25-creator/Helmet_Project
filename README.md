@@ -3,11 +3,13 @@
 A computer vision-based project developed using Python, YOLO, and OpenCV to detect helmet usage and identify potential helmet violations. The system combines image-based detection with camera monitoring, low-light image enhancement, face recognition, and violation record management to support road safety applications.
 
 
+
 📌 Project Overview
 
 Helmet usage plays an important role in reducing the risk of serious head injuries among motorcycle riders. Manually monitoring helmet compliance through traffic cameras can be time-consuming, making automated detection a useful application of computer vision.
 
 This project uses a YOLO-based object detection model to identify helmet and head regions. It also includes a Streamlit interface for image-based detection and a separate monitoring script that processes camera feeds, captures potential violation images, and stores relevant information in a database.
+
 
 
 ✨ Key Features
@@ -22,6 +24,7 @@ This project uses a YOLO-based object detection model to identify helmet and hea
 * Visual Results: Displays detection outputs with bounding boxes and labels.
 
 
+
 🛠️ Technologies Used
 
 * Python – Application development
@@ -31,6 +34,7 @@ This project uses a YOLO-based object detection model to identify helmet and hea
 * NumPy – Numerical and array operations
 * treamlit – Interactive web interface
 * SQLite – Violation record storage
+
 
 
 📂 Project Structure
@@ -67,7 +71,7 @@ pip install streamlit ultralytics opencv-python numpy pillow deepface
 
 Make sure Python is installed and the `final.pt` model file is present in the project directory.
 
----
+
 
 🚀 Running the Application
 
@@ -104,7 +108,7 @@ Steps to use:
 
 Note: Camera monitoring and image-based detection are implemented separately. The camera monitoring script creates the `violations/` directory and `violations.db` database as needed.
 
----
+
 
 🔍 System Workflow
 
@@ -116,6 +120,7 @@ Note: Camera monitoring and image-based detection are implemented separately. Th
 6. Snapshot Storage: Saves an image of a potential violation.
 7. Database Logging: Records the available details, including timestamp, identity label, image path, and camera ID.
 8. Result Display: Shows annotated detections and monitoring results.
+
 
 
 📊 Model Information
@@ -134,6 +139,7 @@ The monitoring script expects the model to detect the classes "helmet" and "head
 Note: The exact model architecture, training dataset, and measured accuracy should be added only when those details have been verified.
 
 
+
 🎯 Applications
 
 * Intelligent traffic monitoring
@@ -142,6 +148,7 @@ Note: The exact model architecture, training dataset, and measured accuracy shou
 * Helmet compliance monitoring
 * Computer vision experimentation
 * Academic deep learning projects
+
 
 
 🔮 Future Enhancements
@@ -155,6 +162,7 @@ Note: The exact model architecture, training dataset, and measured accuracy shou
 * Explore secure deployment for practical traffic monitoring environments.
 
 
+
 ⚠️ Limitations
 
 * Detection performance depends on image quality and model accuracy.
@@ -164,9 +172,11 @@ Note: The exact model architecture, training dataset, and measured accuracy shou
 * The current camera configuration uses camera ID `0` by default.
 
 
+
 🔒 Privacy Considerations
 
 Face images and violation records may contain sensitive personal information. Use the system responsibly, obtain appropriate authorization, and protect stored images and database records.
+
 
 
 👩‍💻 Author
