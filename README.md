@@ -40,6 +40,7 @@ This project uses a YOLO-based object detection model to identify helmet and hea
 📂 Project Structure
 
 Helmet_Project/
+
 │
 ├── annotated_output1.mp4  
 ├── enhancemulti.py        
